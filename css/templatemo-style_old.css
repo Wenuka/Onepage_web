@@ -51,10 +51,6 @@ h2 span
 		font-weight: bold;
 	}
 /* end h2 */
-.btn_orange{
-	background-color:#f04c40;
-	color: #fff;
-	}
 
 /* start about team service portfolio contact */
 #about, #team, #service,
@@ -134,8 +130,7 @@ h2 span
 
 @-webkit-keyframes sk-waveStretchDelay {
   0%, 40%, 100% {
-            -webkit-trans
-            : scaleY(0.4);
+            -webkit-transform: scaleY(0.4);
                     transform: scaleY(0.4); }
 
   20% {
@@ -333,7 +328,7 @@ header .social-icon li a
 #team .team-wrapper:hover
 	{
 		cursor: pointer;
-		opacity: 0.8;
+		opacity: 0.4;
 		bottom: 4px;
 	}
 #team .team-wrapper .team-des
@@ -479,7 +474,7 @@ header .social-icon li a
 	}
 #contact address
 	{
-		
+		border-bottom: 1px solid #505050;
 		padding-top: 30px;
 	}
 #contact address .address-title

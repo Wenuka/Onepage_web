@@ -356,7 +356,7 @@
 								<br><br>
 								<h4>inna.lk </h4>
 								<h5>A complete E-commerce solution for online accommodation reservation</h5>
-								<a class="btn btn-default" data-toggle="modal" href="#portfolioModal1" >MORE</a>
+								<a onclick="playVid()" class="btn btn-default" data-toggle="modal" href="#portfolioModal1" >MORE</a>
 							</div>
 						</div>
 						<!-- <br class="hidden-md hidden-lg">
@@ -447,7 +447,7 @@
 		<div aria-hidden="true" class="portfolio-modal modal fade" id="portfolioModal1" role="dialog" tabindex="-1">
 			<div class="modal-dialog">
 				<div class="modal-content">
-					<div class="close-modal" data-dismiss="modal">
+					<div class="close-modal" data-dismiss="modal" onclick="stopVid()">
 						<div class="lr">
 							<div class="rl"></div>
 						</div>
@@ -460,7 +460,12 @@
 									<h2>inna.lk</h2>
 
 									<p class="item-intro text-muted">A complete E-commerce solution for online accommodation reservation</p>
-									<img alt="" class="img-responsive img-centered" src="images/roundicons-free.png" />
+									<!-- <img alt="" class="img-responsive img-centered" src="images/roundicons-free.png" /> -->
+									<div align="center" class="embed-responsive embed-responsive-16by9">
+									    <video controls style="margin-top:-3%;margin-bottom:5%;" height="500" width="750">
+									  		<source src="promo_product_video/inna_lk.mp4" type="video/mp4" /> Your browser does not support the video tag.
+										</video>
+									</div>
 									<p>The inna.lk is an intelligent travel mate perfectly molded into a complete solutionthat not only books accommodation places online, but also to helps users to plan their next trip as well!</p>
 
 									<p>The main system consists of three sub systems, namely main website for customers, control panel for accommodation providers to alter and view their listings and a backend system to add new listings.</p>
@@ -472,9 +477,17 @@
 										<li>Client: inna.lk</li>
 										<li>Category: E commerce</li>
 									</ul>
-									<button class="btn btn_orange" data-dismiss="modal" type="button">Go Back</button></div>
+									<button onclick="stopVid()" class="btn btn_orange" data-dismiss="modal" type="button">Go Back</button></div>
 							</div>
 						</div>
+						<script type="text/javascript">
+							function playVid() {
+								document.getElementsByTagName('video')[0].play();
+							}
+							function stopVid() {
+								document.getElementsByTagName('video')[0].pause();
+							}
+						</script>
 					</div>
 				</div>
 			</div>
